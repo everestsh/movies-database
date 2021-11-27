@@ -5,31 +5,14 @@ import { Provider} from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function reducer() {
-  return {
-    title: 'Title from Redux store'
-  };
-}
+import reducer from './reducers/Reducer';
+
 
 const store = createStore(reducer);
 
-function App(props) {
-  
-  // console.log(props)
-
-  // console.log(reducer)
-  const reduce = reducer()
-  // console.log(reduce.title)
-  return (
-    <div className="App">
-      {/* <h1>Test</h1> */}
-      <h1>{reduce.title}</h1>
-    </div>
-  );
-}
 
 ReactDOM.render(
   <React.StrictMode>
