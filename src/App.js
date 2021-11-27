@@ -7,7 +7,7 @@ function App(props) {
   // console.log(props)
 
   // console.log(reducer)
-  const reduce = reducer()
+  const reduce = reducer({})
 
   // console.log(reduce.title)
   return (
