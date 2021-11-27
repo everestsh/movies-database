@@ -1,13 +1,11 @@
 
-import reducer from './reducers/Reducer';
+import reducer, {initialState} from './reducers/Reducer';
 import './App.css';
 
 function App(props) {
   
-  // console.log(props)
 
-  // console.log(reducer)
-  const reduce = reducer()
+  const reduce = reducer(initialState, {type:''})
 
   // console.log(reduce.title)
   return (

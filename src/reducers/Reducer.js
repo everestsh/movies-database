@@ -6,13 +6,13 @@ export const initialState = {
   }
 
 
-  const reducer = (state = initialState, action) => {
+  const reducer = (state, action) => {
     //   console.log("reducer state =", state)
       console.log("reducer action = ", action)
     //   return state;
-    switch (action) {
+    switch (action.type) {
       default:
-        return initialState;
+        return state;
     }
   };
   export default reducer;
