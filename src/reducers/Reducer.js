@@ -9,7 +9,6 @@ export const initialState = {
   const reducer = (state, action) => {
     //   console.log("reducer state =", state)
       console.log("reducer action = ", action)
-    //   return state;
     switch (action.type) {
       default:
         return state;
