@@ -1,6 +1,7 @@
 import React, {useState, useReducer } from "react";
 import reducer, {initialState} from './reducers/Reducer';
 import './App.css';
+import Movie from "./components/Movie";
 
 function App(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -15,6 +16,7 @@ function App(props) {
       {/* <h1>Test</h1> */}
       {/* <h1>{reduce.title}</h1> */}
       <h1>{state.title}</h1>
+      <Movie/>
     </div>
   );
 }
