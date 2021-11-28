@@ -1,12 +1,14 @@
 
 
+// import movies from './../data.js';
 
 export const initialState = {
-    title: 'Title from Redux store'
-  }
+  movies: "movies",
+  appTitle: "IMDB Movie Database"
+}
 
 
-  const reducer = (state, action) => {
+  const movieReducer = (state, action) => {
     //   console.log("reducer state =", state)
       console.log("reducer action = ", action)
     switch (action.type) {
@@ -14,4 +16,4 @@ export const initialState = {
         return state;
     }
   };
-  export default reducer;
+  export default movieReducer;

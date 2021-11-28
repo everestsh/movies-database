@@ -8,10 +8,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import reducer from './reducers/Reducer';
+import movieReducer from './reducers/movieReducer';
 
 
-const store = createStore(reducer);
+const store = createStore(movieReducer);
 
 
 ReactDOM.render(
